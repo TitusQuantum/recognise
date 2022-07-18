@@ -50,5 +50,6 @@ public class calculate {
         obj.prime();
         obj.reverse();
         obj.display();
+        sc.close();
     }
 }
