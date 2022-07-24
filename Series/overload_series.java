@@ -1,6 +1,6 @@
 class overload_series {
     double sum=0;
-    double overload_series(double n)
+    double series(double n)
     {
         for(int i=1;i<=n;i++)
         {
@@ -8,7 +8,7 @@ class overload_series {
         }
         return sum;
     }
-    double overload_series(double a, double n)
+    double series(double a, double n)
     {
         int c=1;
         for(int i=1;i<=n;i++)
