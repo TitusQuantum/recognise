@@ -1,5 +1,5 @@
 class overload_check {
-    void overload_check(String str,char ch)
+    void check(String str,char ch)
     {
         int l=str.length(),f=0;
         for(int i=0;i<l;i++)
@@ -10,7 +10,7 @@ class overload_check {
         }
         System.out.println(f);
     }
-    void overload_check(String s1)
+    void check(String s1)
     {
         String s = s1.toLowerCase();
         int l=s.length();
