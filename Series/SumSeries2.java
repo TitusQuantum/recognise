@@ -1,4 +1,4 @@
-class SunSeries2 {
+class SumSeries2 {
     void series(int x, int n)
     {
         double s=0;
