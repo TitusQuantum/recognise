@@ -24,5 +24,6 @@ class palindrome {
         System.out.print("Enter the number : ");
         int x = sc.nextInt();
         obj.isPalin(x);
+        sc.close();
     }
 }
