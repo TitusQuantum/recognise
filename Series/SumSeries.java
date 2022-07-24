@@ -1,6 +1,6 @@
 class SumSeries {
     double s=0;
-    void SumSeries(int n,double x)
+    void Sum(int n,double x)
     {
         for(int i=1;i<=n;i++)
         {
@@ -11,7 +11,7 @@ class SumSeries {
         }
         System.out.println(s);
     }
-    void SumSeries()
+    void Sum()
     {
         int f=1;
         for(int i=1;i<=20;i++)
