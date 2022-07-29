@@ -1,25 +1,25 @@
 import java.util.*;
 public class calculate {
-    int num,f,rev;
+    int num,c,rev;
     calculate(int n)
     {
         num=n;
-        f=0;
+        c=0;
         rev=0;
     }
     int prime()
     {
-        f=1;
+        c=1;
         if(num==0 || num==1)
-            f=0;
+            c=0;
         else
             for(int i=2;i<num/2;i++)
             {
                 if(num%i == 0)
-                    f = 0;
+                    c = 0;
                     break;
             }
-        return f;
+        return c;
     }
     int reverse()
     {
@@ -34,7 +34,7 @@ public class calculate {
     }
     void display()
     {
-        if(f==1 && num==rev)
+        if(c==1 && num==rev)
             System.out.println("Prime Palindrome number");
         else 
             System.out.println("Not a prime palindrome number");
