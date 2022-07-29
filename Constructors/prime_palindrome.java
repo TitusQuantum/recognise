@@ -1,7 +1,7 @@
 import java.util.*;
-public class calculate {
+public class prime_palindrome {
     int num,c,rev;
-    calculate(int n)
+    prime_palindrome(int n)
     {
         num=n;
         c=0;
@@ -46,7 +46,7 @@ public class calculate {
         System.out.println("Enter the number : ");
         int x = sc.nextInt();
 
-        calculate obj = new calculate(x);
+        prime_palindrome obj = new prime_palindrome(x);
         obj.prime();
         obj.reverse();
         obj.display();
