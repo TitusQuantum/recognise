@@ -3,7 +3,7 @@
  *  A Dudeney number is a positive integer that is a perfect cube such that the sum of its digits is equal to the cube root of the number. Write a program to input a number and check and print whether it is a Dudeney number or not.
 */
 
-public class dudeny_no {
+public class dudeney_no {
     int dudeney(int n)
     {
         int dup=n,d=0,c=0,s=0,x;
@@ -22,7 +22,7 @@ public class dudeny_no {
     }
     public static void main(String args[])
     {
-        dudeny_no obj = new dudeny_no();
+        dudeney_no obj = new dudeney_no();
         for(int i=1;i<100000;i++)
         {
             if(obj.dudeney(i)==1)
