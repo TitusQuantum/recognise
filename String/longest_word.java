@@ -17,12 +17,14 @@ class longest_word {
         for(int i=0;i<l;i++)
         {
             char ab=s.charAt(i);
-            if(ab==32){
+            if(ab==32)
+            {
                 if(w.length()>lw.length())
                     lw=w;
                 w="";
             }
-            else{
+            else
+            {
                 w+=ab;
             }
         }
