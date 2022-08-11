@@ -214,7 +214,14 @@ class Project{
     }
     void Sum1()
     {
-
+        System.out.print("Enter the number (till which number you want to find sum of reciprocals) : ");
+        int n = sc.nextInt();
+        double s = 0.0;
+        for(double i=1;i<=n;i++)
+        {
+            s=s+(1/i);
+        }
+        System.out.println("Sum : "+s);
     }
     void Sum2()
     {
