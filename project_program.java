@@ -235,7 +235,12 @@ class Project{
     }
     void Seriesdisplay()
     {
-
+        System.out.print("Enter the number of terms you want to print : ");
+        int n = sc.nextInt();
+        for(int i=1;i<=n;i++)
+        {
+            System.out.print(((int)Math.pow(i,3)-1)+" ");
+        }
     }
     void Sum3()
     {
