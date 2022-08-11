@@ -202,7 +202,15 @@ class Project{
     }
     void Fibonacci()
     {
-
+        System.out.print("Enter the limit (till how many terms you want to print) : ");
+        int n = sc.nextInt(), a=0,b=1,c=0;
+        for(int i=0;i<=n;i++)
+        {
+            System.out.print(a+" ");
+            c=a+b;
+            a=b;
+            b=c;
+        }
     }
     void Sum1()
     {
