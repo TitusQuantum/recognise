@@ -225,7 +225,13 @@ class Project{
     }
     void Sum2()
     {
-
+        System.out.print("Enter the number (till which you want to find the sum of squares) : ");
+        int n=sc.nextInt(), s=0;
+        for(int i=1;i<=n;i++)
+        {
+            s=s+(int)Math.pow(i,2);
+        }
+        System.out.println("Sum of squares till "+n+" is : "+s);
     }
     void Seriesdisplay()
     {
