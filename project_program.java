@@ -1,9 +1,9 @@
 import java.util.*;
 class Project{
-    public static void main(String args[])
+    Scanner sc = new Scanner(System.in);
+    Project obj = new Project();
+    void main(String args[])
     {
-        Scanner sc = new Scanner(System.in);
-        Project obj = new Project();
         System.out.println("\tMain Menu");
         System.out.println("1. Number System");
         System.out.println("2. Series");
@@ -104,7 +104,23 @@ class Project{
     }
     void Armstrong()
     {
-
+        /*
+         * Armstrong number is a number whose sum of cubes of its digits is equal to the number.
+         * Ex:- 153 
+         * 1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153
+        */
+        System.out.print("Enter the number : ");
+        int n = sc.nextInt(), d=0, s=0, dup=n;
+        while(n>0)
+        {
+            d=n%10;
+            s=s+(d*d*d);
+            n=n/10;
+        }
+        if(dup==s)
+            System.out.println("Entered number is a Armstrong number");
+        else
+            System.out.println("Entered number is not a Armstrong Number");
     }
     void Palindrome()
     {
