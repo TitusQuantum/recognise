@@ -182,7 +182,23 @@ class Project{
     }
     void Spy()
     {
-
+        /*
+         * A number is spy if its sum of digits is equal to its product of digits. 
+         * Ex:- 22 : 2+2=4 and 2*2=4
+        */
+        System.out.print("Enter the number");
+        int n = sc.nextInt(), d=0, sum=0, prod=1;
+        while(n>0)
+        {
+            d=n%10;
+            sum=sum+d;
+            prod=prod*d;
+            n=n/10;
+        }
+        if(sum==prod)
+            System.out.println("Entered number is a Spy number");
+        else
+            System.out.println("Entered number is not a Spy number");
     }
     void Fibonacci()
     {
