@@ -165,12 +165,18 @@ class Project{
     {
         System.out.print("Enter the number : ");
         int n=sc.nextInt(), c=0, div=0, rem=0, dup=n;
+        n=(int)Math.pow(n,2);
         while(n>0)
         {
             c++;
             n=n/10;
         }
         div = (int)Math.pow(10,c);
+        rem = n%div;
+        if(rem==dup)
+            System.out.println("Entered number is a automorphic number");
+        else 
+            System.out.println("Entered number is not a automorphic number");
     }
     void Spy()
     {
