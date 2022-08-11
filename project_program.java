@@ -244,7 +244,16 @@ class Project{
     }
     void Sum3()
     {
-
+        int s=0,p=1;
+        for(int i=1;i<=20;i++)
+        {
+            for(int j=1;j<=i;j++)
+            {
+                p=p*j;
+            }
+            s=s+p;
+        }
+        System.out.println("Sum : "+s);
     }
     void Sorting()
     {
