@@ -37,6 +37,7 @@ class Project{
                         break;
                     case 4:
                         obj.Automorphic();
+                        break;
                     case 5:
                         obj.Spy();
                         break;
