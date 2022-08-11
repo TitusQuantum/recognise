@@ -163,7 +163,14 @@ class Project{
     }
     void Automorphic()
     {
-
+        System.out.print("Enter the number : ");
+        int n=sc.nextInt(), c=0, div=0, rem=0, dup=n;
+        while(n>0)
+        {
+            c++;
+            n=n/10;
+        }
+        div = (int)Math.pow(10,c);
     }
     void Spy()
     {
