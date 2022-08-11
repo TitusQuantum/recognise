@@ -19,7 +19,7 @@ class Project{
                 System.out.println("\tNumber System");
                 System.out.println("1. Armstrong Number");
                 System.out.println("2. Palindrome Number");
-                System.out.println("3. Dudeny Number");
+                System.out.println("3. Dudeney Number");
                 System.out.println("4. Automorphic Number");
                 System.out.println("5. Spy Number");
                 System.out.print("Enter your choice : ");
@@ -33,7 +33,7 @@ class Project{
                         obj.Palindrome();
                         break;
                     case 3:
-                        obj.Dudeny();
+                        obj.Dudeney();
                         break;
                     case 4:
                         obj.Automorphic();
@@ -141,9 +141,25 @@ class Project{
         else 
             System.out.println("Entered number is not a Palindrome Number");
     }
-    void Dudeny()
+    void Dudeney()
     {
-
+        /*
+         * Numbers in which the cube of sum of digits is equal to the number are called Dudeney number.
+         * Ex:- 512 : (5+1+2)^3 = 8^3 = 512
+        */
+        System.out.print("Enter the number : ");
+        int n = sc.nextInt(), d=0, s=0, c=0, dup=n;
+        while(n>0)
+        {
+            d=n%10;
+            s=s+d;
+            n=n/10;
+        }
+        c=s*s*s;
+        if(c==dup)
+            System.out.println("Entered number is a Dudeney number");
+        else 
+            System.out.println("Entered number is not a Dudeney number");
     }
     void Automorphic()
     {
