@@ -1,8 +1,12 @@
 import java.util.*;
 class Project{
     Scanner sc = new Scanner(System.in);
-    Project obj = new Project();
-    void main(String args[])
+    static Project obj = new Project();
+    public static void main(String args[])
+    {
+        obj.run();
+    }
+    void run()
     {
         System.out.println("\tMain Menu");
         System.out.println("1. Number System");
