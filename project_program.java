@@ -124,7 +124,22 @@ class Project{
     }
     void Palindrome()
     {
-
+        /*
+         * Numbers which are still same after reversing its digits are called Palindrome Number.
+         * Ex:- 121 , 12521 , etc.
+        */
+        System.out.print("Enter the number : ");
+        int n=sc.nextInt(), d=0, rev=0, dup=n;
+        while(n>0)
+        {
+            d=n%10;
+            rev=rev*10+d;
+            n=n/10;
+        }
+        if(rev==dup)
+            System.out.println("Entered number is a Palindrome number");
+        else 
+            System.out.println("Entered number is not a Palindrome Number");
     }
     void Dudeny()
     {
