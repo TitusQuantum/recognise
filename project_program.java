@@ -307,7 +307,23 @@ class Project{
     }
     void Linear()
     {
-
+        /*
+         * n[] = {0,99,2,98,65,76,69,90,121,23}
+         * Take a input from user and search for it in array. Print "found" and its posiition in array if found otherwise print "not found".
+        */
+        int n[] = {0,99,2,98,65,76,69,90,121,23};
+        System.out.print("Enter the element to search for in the array : ");
+        int x = sc.nextInt(), l=n.length;
+        for(int i=0;i<l;i++)
+        {
+            if(n[i]==x)
+            {
+                System.out.println("Found");
+                System.out.println("The element you have searched for is at "+i+"th position in array.");
+            }
+            else 
+                System.out.println("Not found");
+        }
     }
     void Binary()
     {
