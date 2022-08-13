@@ -331,6 +331,19 @@ class Project{
     }
     void ArraySum()
     {
-
+        System.out.print("Enter the length of array : ");
+        int l = sc.nextInt();
+        int n[] = new int[l];
+        for(int i=0;i<l;i++)
+        {
+            System.out.print("Enter "+(i+1)+"th element : ");
+            n[i] = sc.nextInt();
+        }
+        int sum=0;
+        for(int i=0;i<l;i++)
+        {
+            sum=sum+n[i];
+        }
+        System.out.println("Sum of all elements of array is : "+sum);
     }
 }
