@@ -257,7 +257,32 @@ class Project{
     }
     void Sorting()
     {
-
+        System.out.print("Enter the length of array : ");
+        int l = sc.nextInt();
+        int n[] = new int[l];
+        for(int i=0;i<l;i++)
+        {
+            System.out.print("Enter the "+(i+1)+"th term : ");
+            n[i] = sc.nextInt();
+        }
+        int temp=0;
+        for(int i=0;i<l;i++)
+        {
+            for(int j=i+1;j<l;j++)
+            {
+                if(n[i]>n[j])
+                {
+                    temp = n[i];
+                    n[i] = n[j];
+                    n[j] = temp;
+                }
+            }
+        }
+        System.out.print("Sorted array : ");
+        for(int i=0;i<l;i++)
+        {
+            System.out.print(n[i]+" ");
+        }
     }
     void ArrayCompare()
     {
