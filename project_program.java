@@ -286,7 +286,24 @@ class Project{
     }
     void ArrayCompare()
     {
-
+        System.out.print("Enter the length of array : ");
+        int l = sc.nextInt();
+        int n[] = new int[l];
+        for(int i=0;i<l;i++)
+        {
+            System.out.print("Enter the "+(i+1)+"th element : ");
+            n[i] = sc.nextInt();
+        }
+        int max = n[0], min = n[0];
+        for(int i=0;i<l;i++)
+        {
+            if(n[0]<n[i])
+                max = n[i];
+            else if(n[0]>n[i])
+                min = n[i];
+        }
+        System.out.println("Largest element : "+max);
+        System.out.println("Smallest element : "+min);
     }
     void Linear()
     {
