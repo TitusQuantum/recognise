@@ -307,7 +307,45 @@ class Project{
     }
     void PrimeArray()
     {
-
+        System.out.print("Enter the length of array : ");
+        int l = sc.nextInt();
+        int n[] = new int[l];
+        // taking input from the user
+        for(int i=0;i<l;i++)
+        {
+            System.out.print("Enter the "+(i+1)+"th element : ");
+            n[i] = sc.nextInt();
+        }
+        //sorting the array
+        int temp=0;
+        for(int i=0;i<l;i++)
+        {
+            for(int j=i+1;j<l;j++)
+            {
+                if(n[i]>n[j])
+                {
+                    temp = n[i];
+                    n[i] = n[j];
+                    n[j] = temp;
+                }
+            }
+        }
+        //printing prime numbers present in array
+        System.out.println("Prime numbers present in the array");
+        int c=1;
+        for(int i=0;i<l;i++)
+        {
+            for(int j=2;j<n[i];j++)
+            {
+                if(n[i]%j==0)
+                    c=0;
+            }
+            if(c==1)
+            {
+                System.out.println(n[i]);
+            }
+            c=1;
+        }
     }
     void Binary()
     {
