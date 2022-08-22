@@ -79,7 +79,7 @@ class Project{
                 System.out.println("\tArray");
                 System.out.println("1. Sorting an array");
                 System.out.println("2. Finding smallest and largest element of an array");
-                System.out.println("3. Searching an element in an array using Linear Search Technique");
+                System.out.println("3. Display all primes numbers from an array");
                 System.out.println("4. Searching an element in an array using Binary Search Technique");
                 System.out.println("5. Sum of all elements of an array");
                 System.out.print("Enter your choice : ");
@@ -304,6 +304,10 @@ class Project{
         }
         System.out.println("Largest element : "+max);
         System.out.println("Smallest element : "+min);
+    }
+    void PrimeArray()
+    {
+        
     }
     void Linear()
     {
