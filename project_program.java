@@ -79,8 +79,8 @@ class Project{
                 System.out.println("\tArray");
                 System.out.println("1. Sorting an array");
                 System.out.println("2. Finding smallest and largest element of an array");
-                System.out.println("3. Display all primes numbers from an array");
-                System.out.println("4. Display all perfect squares from an array");
+                System.out.println("3. Display all primes numbers in ascending order from an array");
+                System.out.println("4. Display all perfect squares in asceding order from an array");
                 System.out.println("5. Sum of all elements of an array");
                 System.out.print("Enter your choice : ");
                 int ch3 = sc.nextInt();
@@ -349,7 +349,38 @@ class Project{
     }
     void PerfectSquare()
     {
-
+        System.out.print("Enter the length of array : ");
+        int l = sc.nextInt();
+        int n[] = new int[l];
+        for(int i=0;i<l;i++)
+        {
+            System.out.print("Enter "+(i+1)+"th element : ");
+            n[i] = sc.nextInt();
+        }
+        //sorting the array
+        int temp=0;
+        for(int i=0;i<l;i++)
+        {
+            for(int j=i+1;j<l;j++)
+            {
+                if(n[i]>n[j])
+                {
+                    temp = n[i];
+                    n[i] = n[j];
+                    n[j] = temp;
+                }
+            }
+        }
+        //printing all perfect squares
+        System.out.println("Perfect squares present in the array : ");
+        for(int i=1;i<l;i++)
+        {
+            for(int j=1;j<n[i];j++)
+            {
+                if(j*j==n[i])
+                    System.out.println(n[i]);
+            }
+        }
     }
     void ArraySum()
     {
