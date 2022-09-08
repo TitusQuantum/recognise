@@ -10,20 +10,20 @@ class reverse_sentence {
     {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the String : ");
-        String s = sc.nextLine(), s1="";
-        s=" "+s;
-        int l = s.length();
-        for(int i=l-1;i>=0;i--)
+        String s = sc.nextLine(), word="", display="";
+        s=s+" ";
+        for(int i=0;i<s.length();i++)
         {
             char ab=s.charAt(i);
             if(ab==32)
             {
-                System.out.print(s1+" ");
-                s1="";
+                display = word + " " + display;
+                word="";
             }
             else
-                s1=ab+s1;
+                word = word + ab;
         }
+        System.out.println(display);
         sc.close();
     }
 }
