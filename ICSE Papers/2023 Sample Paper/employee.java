@@ -15,6 +15,7 @@ class employee
         age = sc.nextInt();
         System.out.print("Enter the basic salary : ");
         basic = sc.nextDouble();
+        sc.close();
     }
     void calculate()
     {
