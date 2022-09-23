@@ -14,6 +14,7 @@ public class sri{
         String s = sc.nextLine();
         obj.search(n,s);
         obj.print(n);
+        sc.close();
     }
     void search(String n[], String s)
     {
