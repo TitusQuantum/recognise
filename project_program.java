@@ -103,6 +103,34 @@ class Project{
                         break;
                 }
                 break;
+            case 4:
+                System.out.println("\tPattern");
+                System.out.println("1. Fibonacci Triangle");
+                System.out.println("2. Diamond");
+                System.out.println("3. Right angled Triangle");
+                System.out.println("4. Reversed Right angled Triangle");
+                System.out.println("5. Floyd's Triangle");
+                System.out.print("Enter the choice : ");
+                int ch4 = sc.nextInt();
+                switch(ch4)
+                {
+                    case 1:
+                        obj.FibonacciTriangle();
+                        break;
+                    case 2:
+                        obj.Daimond();
+                        break;
+                    case 3:
+                        obj.R_Triangle();
+                        break;
+                    case 4:
+                        obj.Rev_R_Triangle();
+                        break;
+                    case 5:
+                        obj.Floyds();
+                        break;
+                }
+                break;
         }
         sc.close();
     }
@@ -398,5 +426,25 @@ class Project{
             sum=sum+n[i];
         }
         System.out.println("Sum of all elements of array is : "+sum);
+    }
+    void FibonacciTriangle()
+    {
+
+    }
+    void Daimond()
+    {
+
+    }
+    void R_Triangle()
+    {
+
+    }
+    void Rev_R_Triangle()
+    {
+
+    }
+    void Floyds()
+    {
+
     }
 }
