@@ -445,7 +445,32 @@ class Project{
     }
     void Daimond()
     {
-
+        System.out.print("Enter the number of rows to print : ");
+        int n = sc.nextInt();
+        for(int i=1;i<=n;i++)
+        {
+            for(int j=n;j>i;j--)
+            {
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++)
+            {
+                System.out.print("*"+" ");
+            }
+            System.out.println();
+        }
+        for(int i=n;i>=1;i--)
+        {
+            for(int j=i;j<n;j++)
+            {
+                System.out.print(" ");
+            }
+            for(int j=i;j>=1;j--)
+            {
+                System.out.print("*"+" ");
+            }
+            System.out.println();
+        }
     }
     void R_Triangle()
     {
