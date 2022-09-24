@@ -487,7 +487,16 @@ class Project{
     }
     void Rev_R_Triangle()
     {
-
+        System.out.print("Enter the number of rows to print : ");
+        int n = sc.nextInt();
+        for(int i=n;i>=1;i--)
+        {
+            for(int j=i;j>=1;j--)
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
     void Floyds()
     {
