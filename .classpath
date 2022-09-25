@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="String/|Array/|Constructors/|Functions (User defined Methods)/|ICSE Papers/Sample Paper (2023)/|Misc Programs/|Patterns/|Series/" kind="src" path=""/>
+	<classpathentry kind="src" path="Array"/>
+	<classpathentry kind="src" path="Constructors"/>
+	<classpathentry kind="src" path="Functions (User defined Methods)"/>
+	<classpathentry kind="src" path="ICSE Papers/Sample Paper (2023)"/>
+	<classpathentry kind="src" path="Misc Programs"/>
+	<classpathentry kind="src" path="Patterns"/>
+	<classpathentry kind="src" path="Series"/>
+	<classpathentry kind="src" path="String"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
