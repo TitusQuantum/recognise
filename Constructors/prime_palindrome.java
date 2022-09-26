@@ -13,7 +13,7 @@ public class prime_palindrome {
         if(num==0 || num==1)
             c=0;
         else
-            for(int i=2;i<num/2;i++)
+            for(int i=2;i<num/2;)
             {
                 if(num%i == 0)
                     c = 0;
