@@ -168,6 +168,25 @@ class Project{
                 System.out.println("5. Palindrome String");
                 System.out.print("Enter your choice : ");
                 int ch6 = sc.nextInt();
+                switch(ch6)
+                {
+                    case 1:
+                        obj.Reverse_sen();
+                        break;
+                    case 2:
+                        obj.Longest_word();
+                        break;
+                    case 3:
+                        obj.Replace_vowels();
+                        break;
+                    case 4:
+                        obj.Unique();
+                        break;
+                    case 5:
+                        obj.Palindrome();
+                        break;
+                }
+                break;
         }
         sc.close();
     }
@@ -634,4 +653,9 @@ class Project{
                 System.out.println("Entered year is not a leap year");
         }
     }
+    void Reverse_sen(){}
+    void Longest_word(){}
+    void Replace_vowels(){}
+    void Unique(){}
+    void Palindrome_String(){}
 }
