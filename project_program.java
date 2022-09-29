@@ -540,7 +540,23 @@ class Project{
             System.out.println();
         }
     }
-    void Equable_Triangle(){}
+    void Equable_Triangle()
+    {
+        System.out.println("Enter the three sides of the triangle");
+        System.out.print("1st side : ");
+        double a = sc.nextDouble();
+        System.out.print("2nd side : ");
+        double b = sc.nextDouble();
+        System.out.print("3rd side : ");
+        double c = sc.nextDouble();
+        double p = (a+b+c);
+        double s = (a+b+c)/2;
+        double area = Math.sqrt((s*(s-a)*(s-b)*(s-c)));
+        if(p==area)
+            System.out.println("Entered triangle is equable");
+        else
+            System.out.println("Entered triangle is not a equable triangle");
+    }
     void NOR(){}
     void Type_of_Tri(){}
     void po_ne_0(){}
