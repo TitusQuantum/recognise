@@ -591,7 +591,17 @@ class Project{
         else
             System.out.println("Scalene Triangle");
     }
-    void po_ne_0(){}
+    void po_ne_0()
+    {
+        System.out.print("Enter the number : ");
+        int n = sc.nextInt();
+        if(n>0)
+            System.out.println("Positive number");
+        else if(n<0)
+            System.out.println("Negative number");
+        else
+            System.out.println("Nor negative not positive");
+    }
     void leap_year()
     {
         System.out.print("Enter the year : ");
