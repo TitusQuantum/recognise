@@ -592,5 +592,25 @@ class Project{
             System.out.println("Scalene Triangle");
     }
     void po_ne_0(){}
-    void leap_year(){}
+    void leap_year()
+    {
+        System.out.print("Enter the year : ");
+        int n = sc.nextInt(),d=0,c=0;
+        while(n>0)
+        {
+            d=n%10;
+            c++;
+            n=n/10;
+        }
+        if(n>4)
+        {
+            System.out.println("Wrong input");
+            System.out.println("The year should be in 4 digits only");
+        }
+        else
+        {
+            if(n%4==0)
+                System.out.println();
+        }
+    }
 }
