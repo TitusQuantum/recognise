@@ -575,7 +575,22 @@ class Project{
         else if(d<0)
             System.out.println("Imaginary roots");
     }
-    void Type_of_Tri(){}
+    void Type_of_Tri()
+    {
+        System.out.println("Enter the sides of triangle");
+        System.out.print("1st side : ");
+        double a = sc.nextDouble();
+        System.out.print("2nd side : ");
+        double b = sc.nextDouble();
+        System.out.print("3rd side : ");
+        double c = sc.nextDouble();
+        if((a==c)&&(b==c)&&(c==a))
+            System.out.println("Equilateral Triangle");
+        else if((a==b) || (b==c) || (a==c))
+            System.out.println("Isoceles Triangle");
+        else
+            System.out.println("Scalene Triangle");
+    }
     void po_ne_0(){}
     void leap_year(){}
 }
