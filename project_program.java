@@ -159,6 +159,15 @@ class Project{
                         break;
                 }
                 break;
+            case 6:
+                System.out.println("\tString");
+                System.out.println("1. Print entered sentence in reverse order of words");
+                System.out.println("2. Print the longest word in the entered sentence");
+                System.out.println("3. Replace vowels with * in the entered sentence");
+                System.out.println("4. Unique String");
+                System.out.println("5. Palindrome String");
+                System.out.print("Enter your choice : ");
+                int ch6 = sc.nextInt();
         }
         sc.close();
     }
