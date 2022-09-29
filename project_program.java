@@ -602,7 +602,7 @@ class Project{
             c++;
             n=n/10;
         }
-        if(n>4)
+        if(c>4)
         {
             System.out.println("Wrong input");
             System.out.println("The year should be in 4 digits only");
