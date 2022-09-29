@@ -131,6 +131,15 @@ class Project{
                         break;
                 }
                 break;
+            case 5:
+                System.out.println("\tIf Else If");
+                System.out.println("1. Equable Triangle");
+                System.out.println("2. Determine the Nature of Roots of a Quadratic Equation");
+                System.out.println("3. Check for a triangle that whether it is a Equilateral/Icoceles/Scalane");
+                System.out.println("4. Check whether an entered number is a positive or negative or 0");
+                System.out.println("5. Check whether a year is a leap year or not");
+                System.out.print("Enter your choice : ");
+                int ch5 = sc.nextInt();
         }
         sc.close();
     }
