@@ -140,6 +140,25 @@ class Project{
                 System.out.println("5. Check whether a year is a leap year or not");
                 System.out.print("Enter your choice : ");
                 int ch5 = sc.nextInt();
+                switch(ch5)
+                {
+                    case 1:
+                        obj.Equable_Triangle();
+                        break;
+                    case 2:
+                        obj.NOR();
+                        break;
+                    case 3:
+                        obj.Type_of_Tri();
+                        break;
+                    case 4:
+                        obj.po_ne_0();
+                        break;
+                    case 5:
+                        obj.leap_year();
+                        break;
+                }
+                break;
         }
         sc.close();
     }
@@ -521,4 +540,9 @@ class Project{
             System.out.println();
         }
     }
+    void Equable_Triangle(){}
+    void NOR(){}
+    void Type_of_Tri(){}
+    void po_ne_0(){}
+    void leap_year(){}
 }
