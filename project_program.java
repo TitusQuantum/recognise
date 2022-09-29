@@ -605,14 +605,14 @@ class Project{
     void leap_year()
     {
         System.out.print("Enter the year : ");
-        int n = sc.nextInt(),d=0,c=0;
-        while(n>0)
+        int n = sc.nextInt(),d=0,c=0,dup=n;
+        while(dup>0)
         {
-            d=n%10;
+            d=dup%10;
             c++;
-            n=n/10;
+            dup=dup/10;
         }
-        if(c>4)
+        if(c<4)
         {
             System.out.println("Wrong input");
             System.out.println("The year should be in 4 digits only");
@@ -620,7 +620,9 @@ class Project{
         else
         {
             if(n%4==0)
-                System.out.println();
+                System.out.println("Entered year is a leap year");
+            else
+                System.out.println("Entered year is not a leap year");
         }
     }
 }
