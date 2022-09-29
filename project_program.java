@@ -561,7 +561,7 @@ class Project{
     {
         System.out.println("General expression for a quadratic equation : ax^2 + bx + c = 0");
         System.out.println("Enter the value for a,b and c (it can be negative also)");
-        System.out.print("a :");
+        System.out.print("a : ");
         int a = sc.nextInt();
         System.out.print("b : ");
         int b = sc.nextInt();
