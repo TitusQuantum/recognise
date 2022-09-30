@@ -698,7 +698,21 @@ class Project{
             System.out.println("Length of the word : "+lw.length());
         }
     }
-    void Replace_vowels(){}
+    void Replace_vowels()
+    {
+        System.out.print("Enter the sentence : ");
+        String s = sc.nextLine(),display="";
+        int l = s.length();
+        for(int i=0;i<l;i++)
+        {
+            char ab = s.charAt(i);
+            if(ab=='A'||ab=='a'||ab=='E'||ab=='e'||ab=='I'||ab=='i'||ab=='O'||ab=='o'||ab=='U'||ab=='u')
+                display = display + "*";
+            else
+                display = display + ab;
+        }
+        System.out.println(display);
+    }
     void Unique(){}
     void Palindrome_String(){}
 }
