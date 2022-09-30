@@ -675,7 +675,29 @@ class Project{
         }
         System.out.println(display);
     }
-    void Longest_word(){}
+    void Longest_word()
+    {
+        System.out.print("Enter the sentence : ");
+        String s = sc.nextLine(),lw="",w="";
+        s=s+" ";
+        int l = s.length();
+        for(int i=0;i<l;i++)
+        {
+            char ab = s.charAt(i);
+            if(ab!=32)
+            {
+                w=w+ab;
+            }
+            else
+            {
+                if(w.length()>lw.length())
+                    lw=w;
+                w="";
+            }
+            System.out.println("Longest word present in sentence : "+lw);
+            System.out.println("Length of the word : "+lw.length());
+        }
+    }
     void Replace_vowels(){}
     void Unique(){}
     void Palindrome_String(){}
