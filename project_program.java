@@ -731,5 +731,19 @@ class Project{
             }
         }
     }
-    void Palindrome_String(){}
+    void Palindrome_String()
+    {
+        System.out.print("Enter the String : ");
+        String s = sc.nextLine(), rev="";
+        int l = s.length();
+        for(int i=0;i<l;i++)
+        {
+            char ab=s.charAt(i);
+            rev = ab + rev;
+        }
+        if(s.equals(rev))
+            System.out.println("Palindrome String");
+        else
+            System.out.println("Not a Palindrome String");
+    }
 }
