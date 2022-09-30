@@ -713,6 +713,23 @@ class Project{
         }
         System.out.println(display);
     }
-    void Unique(){}
+    void Unique()
+    {
+        System.out.print("Enter the sentence : ");
+        String s = sc.nextLine();
+        int l = s.length();
+        for(int i=0;i<l;i++)
+        {
+            char ab=s.charAt(i);
+            for(int j=i+1;i<l;i++)
+            {
+                char cd = s.charAt(j);
+                if(ab==cd)
+                    System.out.println("Magic String");
+                else
+                    System.out.println("Not a Magic String");
+            }
+        }
+    }
     void Palindrome_String(){}
 }
