@@ -2,7 +2,7 @@ import java.util.*;
 class Project{
     Scanner sc = new Scanner(System.in);
     static Project obj = new Project();
-    public static void main(String args[])
+    public static void main(String[] args)
     {
         obj.run();
     }
@@ -653,7 +653,28 @@ class Project{
                 System.out.println("Entered year is not a leap year");
         }
     }
-    void Reverse_sen(){}
+    void Reverse_sen()
+    {
+        System.out.print("Enter the sentence : ");
+        String s = sc.nextLine();
+        String display="",word="";
+        s = s+" ";
+        int l = s.length();
+        for(int i=0;i<l;i++)
+        {
+            char ab = s.charAt(i);
+            if(ab!=32)
+            {
+                word = word + ab;
+            }
+            else
+            {
+                display=word+" "+display;
+                word="";
+            }
+        }
+        System.out.println(display);
+    }
     void Longest_word(){}
     void Replace_vowels(){}
     void Unique(){}
