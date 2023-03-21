@@ -12,8 +12,10 @@ class binarySearch {
             m=(l+u)/2;
             if(n>x[m])
                 l=m+1;
+                c=m;
             else if(n<x[m])
                 u=m-1;
+                c=m;
             else
             {
                 c=1;
